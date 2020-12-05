@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}
+<title>Christmas Card | Search Page</title>
+{% endblock %}
+
+{% block content %}
+
+	<h1 style="color:Red;">Christmas Card - Search Page</h1>
+	<br/>
+	<form action="{% url 'search_results' %}" method="get">
+	  <input name="q" type="text" placeholder="Search...">
+	</form>
+
+{% endblock %}
